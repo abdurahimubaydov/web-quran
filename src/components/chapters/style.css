@@ -1,0 +1,15 @@
+.chapters-section {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #1E2222;
+}
+
+@media screen and (max-width: 768px) {
+    .chapters-section {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,92 @@
+.chapter-card {
+    width: 30%;
+    border: 1px solid #464B4F;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chapter-box {
+    width: 45px;
+    height: 45px;
+    background: #343A3F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* transform: rotate(45deg); */
+    margin-left: 10px;
+    border-radius: 2px;
+    z-index: 0;
+    margin-right: 15px;
+}
+
+.chapter-name-and-translate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chapter-name {
+    color: #E6E9EA;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chapter-translate {
+    font-size: 12px;
+    color: #777777;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@300&family=M+PLUS+Rounded+1c:wght@500&display=swap');
+.name-arabic {
+    color: white;
+    font-size: 18px;
+    font-family: 'Lateef', serif;
+}
+
+
+.verses-count {
+    color: #777777;
+    font-size: 15px;
+    margin: o;
+}
+
+
+/* hovers */
+
+
+.chapter-card:hover {
+    border-color: #2BA4AA;
+}
+
+.chapter-card:hover .chapter-box {
+    background: #2BA4AA;
+}
+
+.chapter-card:hover .chapter-translate {
+    color: #2BA4AA;
+}
+
+.chapter-card:hover .verses-count {
+    color: #2BA4AA;
+}
+
+@media screen and (max-width: 1013px) {
+    .chapter-card {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .chapter-card {
+        width: 99%;
+    }
+}

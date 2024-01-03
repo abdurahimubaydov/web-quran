@@ -1,0 +1,149 @@
+.surah-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    background: #1F2125;
+}
+
+
+.surah-info .surah-info-card {
+    width: 80%;
+    display: flex;
+}
+
+.surah-info .surah-info-card .left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.surah-info .surah-info-card .left button  {
+    background: none;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.surah-info .surah-info-card .left button:hover {
+    background-color: #343A3E;
+}
+
+.surah-info .surah-info-card .left img  {
+    width: 200px;
+}
+
+.surah-info .surah-info-card .right {
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+}
+
+.surah-info .surah-info-card .right h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.surah-info .surah-info-card .right p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
+.surah-info .surah-info-card .right p strong{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.surah-info .surah-info-card .right p a{
+    color: white;
+    text-decoration: underline;
+}
+
+.surah-info .surah-info-card .right li {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
+.chapter-information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #464B4F;
+}
+
+.chapter-information h1 {
+    width: 50%;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.chapter-information .in-mobile {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapter-information .in-mobile span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chapter-information .in-mobile span label {
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .surah-info {
+        width: 100%;
+    }
+
+    .surah-info .surah-info-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .surah-info .surah-info-card .left {
+        width: 100%;
+    }
+
+    .surah-info .surah-info-card .right {
+        width: 100%;
+    }
+
+    .chapter-information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+    }
+
+    .chapter-information h1 {
+        width: 100%;
+    }
+
+    .chapter-information .in-mobile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

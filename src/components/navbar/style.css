@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background: #343A3F;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px 30px;
+    user-select: none;
+}
+
+.navbar .navbar-icon {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+.navbar h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* modal card */
+
+.modal-card {
+    width: 27%;
+    background: #343A3F;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    box-shadow: 1px 1px 5px #2D3237;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    padding: 10px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+
+.modal-card .header-section {
+    width: 100%;
+    border-bottom: 1px solid #464B4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: fixed;
+}
+
+.modal-card .header-section .icon-section {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: .8s;
+}
+
+
+.modal-card .header-section h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+.modal-card.active {
+    left: 0%;
+}
+
+
+.modal-card .benefect {
+    width: 100%;
+    padding: 30px 20px;
+    background: #272F33;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.modal-card .benefect h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #F0FEFF;
+}
+
+
+.modal-card .benefect p {
+    color: #f0feff9c;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+.modal-card .benefect button {
+    padding: 12px 15px;
+    background: #2BA4AA;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    border: 2px solid #2BA4AA;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.modal-card .benefect button:hover {
+    background: inherit;
+    border: 2px solid #2BA4AA;
+}
+
+
+
+.modal-card .benefect a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #2BA4AA;
+    text-decoration: underline;
+}   
+
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .modal-card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .modal-card {
+        width: 100%;
+        box-shadow: none;
+    }
+}

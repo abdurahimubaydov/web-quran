@@ -1,0 +1,37 @@
+.menu-section {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu-section .menu-card-menu {
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 1px solid #464B4F;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-card {
+    width: 100%;
+    color: #E6E9EA;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #464B4F;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-card:hover .menu-icon {
+    color: white;
+}
